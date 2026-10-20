@@ -1,6 +1,6 @@
 import React from 'react';
 import { Altar } from '../types/game';
-import { X, Sparkles, Check, Gift } from 'lucide-react';
+import { X, Sparkles, Check, Gift, MessageSquare } from 'lucide-react';
 
 interface ShrinesModalProps {
   altars: Altar[];
@@ -24,10 +24,10 @@ export const ShrinesModal: React.FC<ShrinesModalProps> = ({
             <span className="text-2xl text-[#79c5cb]">🪦</span>
             <div>
               <h2 className="text-lg font-bold text-[#e4c16a] tracking-wide font-serif">
-                Altares Tutelares dos Mestres
+                Altares Tutelares dos Mestres & Guardiões
               </h2>
               <p className="text-xs text-[#b7a48a]">
-                4 Altares sagrados nos 4 cantos da cosmologia ({activatedCount}/4 Ativados)
+                4 Altares nos pontos cardeais · Oferendas rituais e mensagens sagradas ({activatedCount}/4 Ativados)
               </p>
             </div>
           </div>
@@ -43,7 +43,7 @@ export const ShrinesModal: React.FC<ShrinesModalProps> = ({
         {/* List of Altars */}
         <div className="flex-1 overflow-y-auto p-4 space-y-4">
           <p className="text-xs text-[#b7a48a] italic leading-relaxed">
-            Faça oferendas rituais com ervas, frutos, tabaco e banhos aos quatro altares para despertar a bênção permanente dos Mestres tutelares.
+            Faça oferendas rituais com ervas sagradas, tabaco, mel e banhos aos quatro altares para despertar a bênção permanente e ouvir a mensagem dos Guardiões (Tata Caveira, Quebra Galho, Iemanjá e Pantera Negra).
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
@@ -68,7 +68,7 @@ export const ShrinesModal: React.FC<ShrinesModalProps> = ({
                             {altar.name}
                           </h3>
                           <span className="text-[11px] text-[#e4c16a] font-medium">
-                            {altar.power}
+                            Guardião: {altar.guardianName}
                           </span>
                         </div>
                       </div>
@@ -84,7 +84,7 @@ export const ShrinesModal: React.FC<ShrinesModalProps> = ({
                       )}
                     </div>
 
-                    <div className="my-2.5 p-2 rounded-lg bg-[#0b0810] border border-[#2c2236] text-[11px] space-y-1">
+                    <div className="my-2 p-2 rounded-lg bg-[#0b0810] border border-[#2c2236] text-[11px] space-y-1">
                       <div className="text-[#a8957c]">
                         <strong>Oferenda sagrada:</strong>{' '}
                         <span className="text-[#f3ead7]">{altar.offeringName}</span>
@@ -93,6 +93,14 @@ export const ShrinesModal: React.FC<ShrinesModalProps> = ({
                         <Sparkles className="w-3 h-3 text-[#e4c16a]" />
                         Bênção: {altar.buff}
                       </div>
+                    </div>
+
+                    {/* Guardian Message */}
+                    <div className="p-2 rounded-lg bg-[#140e1a] border border-[#3e2e4f] text-[10.5px] text-[#e0b0ff] italic">
+                      <div className="text-[10px] text-[#e4c16a] font-semibold not-italic flex items-center gap-1 mb-0.5">
+                        <MessageSquare className="w-3 h-3" /> Sopros do Guardião {altar.guardianName}:
+                      </div>
+                      {altar.guardianMessage}
                     </div>
 
                     {/* Progress track */}

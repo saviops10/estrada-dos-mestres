@@ -1,12 +1,11 @@
 import React from 'react';
 import { Realm, ViewMode } from '../types/game';
-import { Compass, Map, Shield, Users, Sparkles, BookOpen } from 'lucide-react';
+import { Map, Users, Sparkles, Swords, Leaf, BookOpen } from 'lucide-react';
 
 interface GameHeaderProps {
   currentRealm: Realm;
   onOpenView: (mode: ViewMode) => void;
   activeMode: ViewMode;
-  onResetGame?: () => void;
 }
 
 export const GameHeader: React.FC<GameHeaderProps> = ({
@@ -43,6 +42,16 @@ export const GameHeader: React.FC<GameHeaderProps> = ({
 
         <button
           type="button"
+          onClick={() => onOpenView('prologue')}
+          className="flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-medium bg-[#1c1814] text-[#d4c6b2] border border-[#4a3b24] hover:border-[#e4c16a] transition-colors cursor-pointer"
+          title="Ver Enredo e Fuga da Caravela"
+        >
+          <BookOpen className="w-3.5 h-3.5" />
+          <span>Prólogo</span>
+        </button>
+
+        <button
+          type="button"
           onClick={() => onOpenView('reinos')}
           className="px-2.5 py-1 rounded-md text-xs font-medium bg-[#1c1814] text-[#f3ead7] border border-[#4a3b24] hover:border-[#e4c16a] transition-colors cursor-pointer"
         >
@@ -61,7 +70,7 @@ export const GameHeader: React.FC<GameHeaderProps> = ({
           type="button"
           onClick={() => onOpenView('altares')}
           className="flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-medium bg-[#1c1814] text-[#79c5cb] border border-[#4a3b24] hover:border-[#79c5cb] transition-colors cursor-pointer"
-          title="Altares Tutelares e Oferendas"
+          title="Altares Tutelares e Oferendas dos Guardiões"
         >
           <Sparkles className="w-3.5 h-3.5" />
           <span>Altares</span>
@@ -74,7 +83,27 @@ export const GameHeader: React.FC<GameHeaderProps> = ({
           title="Resgate dos 49 Irmãos Foragidos"
         >
           <Users className="w-3.5 h-3.5" />
-          <span>Resgate</span>
+          <span>Resgate (49)</span>
+        </button>
+
+        <button
+          type="button"
+          onClick={() => onOpenView('herbs')}
+          className="flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-medium bg-[#1c1814] text-[#a8c47c] border border-[#4a3b24] hover:border-[#a8c47c] transition-colors cursor-pointer"
+          title="Ervanária & Preparo de Chás"
+        >
+          <Leaf className="w-3.5 h-3.5" />
+          <span>Ervas</span>
+        </button>
+
+        <button
+          type="button"
+          onClick={() => onOpenView('capoeira')}
+          className="flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-medium bg-[#1c1814] text-[#ffd05b] border border-[#4a3b24] hover:border-[#ffd05b] transition-colors cursor-pointer"
+          title="Roda de Capoeira Ancestral"
+        >
+          <Swords className="w-3.5 h-3.5" />
+          <span>Capoeira</span>
         </button>
 
         <button

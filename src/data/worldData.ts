@@ -38,83 +38,84 @@ function corridor(m: number[][], x0: number, y0: number, x1: number, y1: number)
   }
 }
 
+// 63 Sacred Points with Guardians from Brazilian Tradition (Tranca-Rua, Capa Preta, Quebra Galho, Pantera Negra, etc.)
 export const ATLAS: Record<string, [string, string, string, string, string?][]> = {
   encruzilhadas: [
-    ["e01", "Encruzilhada das Sete Vias", "Abertura de Caminhos", "Exu", "Portal"],
-    ["e02", "Caminho da Lua Negra", "Navegação Noturna", "Exu Mirim", "Trilha"],
-    ["e03", "Praça dos Quatro Ventos", "Comunicação", "Exu das 4 Ventos", "Praça"],
-    ["e04", "Portal das Estradas", "Translocação", "Tata Caveira", "Portal"],
+    ["e01", "Encruzilhada das Sete Vias", "Abertura de Caminhos & Fuga", "Tranca-Rua", "Portal"],
+    ["e02", "Caminho da Lua Negra", "Navegação Noturna Furtiva", "Exu Mirim", "Trilha"],
+    ["e03", "Praça dos Quatro Ventos", "Comunicação dos Quilombolas", "Gira Mundo", "Praça"],
+    ["e04", "Portal das Estradas", "Translocação Oculta", "Tata Caveira", "Portal"],
     ["e05", "Viela das Lanternas", "Iluminação Espiritual", "Maria Mulambo", "Viela"],
-    ["e06", "Ponte dos Destinos", "Escolha & Consequência", "Exu Lalu", "Ponte"],
-    ["e07", "Mercado das Sombras", "Troca & Negociação", "Exu Tiriri", "Mercado"],
-    ["e08", "Estrada do Cruzeiro", "Proteção em Viagem", "Exu Caveira", "Estrada"],
-    ["e09", "Marco das Três Trilhas", "Divinação", "Exu Marabô", "Marco"]
+    ["e06", "Ponte dos Destinos", "Escolha & Consequência", "Capa Preta", "Ponte"],
+    ["e07", "Mercado das Sombras", "Troca & Negociação de Armas", "Treme Terra", "Mercado"],
+    ["e08", "Estrada do Cruzeiro", "Proteção em Viagem", "Caveira", "Estrada"],
+    ["e09", "Marco das Três Trilhas", "Divinação dos Sentinelas", "Meia Noite", "Marco"]
   ],
   cruzeiros: [
     ["c01", "Cruzeiro das Brumas", "Visão na Neblina", "Caboclo do Cruzeiro", "Cruzeiro"],
     ["c02", "Campo das Sete Cruzes", "Proteção Múltipla", "Sete Cruzeiros", "Campo"],
-    ["c03", "Vila do Marco Antigo", "Ancestralidade", "Velho do Cruzeiro", "Vila"],
-    ["c04", "Estrada do Silêncio", "Meditação Profunda", "Monge do Silêncio", "Estrada"],
-    ["c05", "Largo das Lanternas", "Guia Espiritual", "Mestra das Lanternas", "Largo"],
-    ["c06", "Portal de Pedra", "Firmeza", "Guardião de Pedra", "Portal"],
-    ["c07", "Colina do Cruzeiro", "Elevação", "Caboclo da Colina", "Colina"],
-    ["c08", "Passagem das Sombras", "Travessia Segura", "Sombra do Cruzeiro", "Passagem"],
-    ["c09", "Praça do Caminhante", "Hospedagem Espiritual", "Pai do Caminho", "Praça"]
+    ["c03", "Vila do Marco Antigo", "Ancestralidade dos Livres", "Velho do Cruzeiro", "Vila"],
+    ["c04", "Estrada do Silêncio", "Meditação Profunda & Foco", "Monge do Silêncio", "Estrada"],
+    ["c05", "Largo das Lanternas", "Guia Espiritual dos Foragidos", "Mestra das Lanternas", "Largo"],
+    ["c06", "Portal de Pedra", "Firmeza de Rocha", "Guardião de Pedra", "Portal"],
+    ["c07", "Colina do Cruzeiro", "Elevação de Axé", "Caboclo da Colina", "Colina"],
+    ["c08", "Passagem das Sombras", "Travessia Segura de Tropas", "Sombra do Cruzeiro", "Passagem"],
+    ["c09", "Praça do Caminhante", "Hospedagem dos Irmãos", "Pai do Caminho", "Praça"]
   ],
   matas: [
-    ["m01", "Mata das Árvores Antigas", "Sabedoria Milenar", "Jequitibá Rei", "Floresta"],
-    ["m02", "Clareira da Lua", "Cura Lunar", "Mãe da Lua", "Clareira"],
-    ["m03", "Trilha do Corvo", "Mensageiro", "Corvo Branco", "Trilha"],
-    ["m04", "Vila dos Cipós", "Flexibilidade & Força", "Mestre Cipó", "Vila"],
-    ["m05", "Bosque das Brumas", "Ocultamento", "Névoa Verde", "Bosque"],
-    ["m06", "Pântano Esquecido", "Transformação", "Senhora do Lodo", "Pântano"],
-    ["m07", "Árvore dos Ecos", "Memória Viva", "Gameleira Sagrada", "Árvore"],
-    ["m08", "Passagem das Raízes", "Conexão Subterrânea", "Raiz Mãe", "Passagem"],
-    ["m09", "Santuário Selvagem", "Refúgio Absoluto", "Pantera Negra", "Santuário"]
+    ["m01", "Mata das Árvores Antigas", "Sabedoria das Raízes", "Jequitibá Rei", "Floresta"],
+    ["m02", "Clareira da Lua", "Cura Lunar & Ervas", "Mãe da Lua", "Clareira"],
+    ["m03", "Trilha do Corvo", "Mensageiro dos Quilombos", "Quebra Galho", "Trilha"],
+    ["m04", "Vila dos Cipós", "Flexibilidade na Capoeira", "Mestre Cipó", "Vila"],
+    ["m05", "Bosque das Brumas", "Camuflagem na Mata", "Pantera Negra", "Bosque"],
+    ["m06", "Pântano Esquecido", "Purificação dos Pés", "Senhora do Lodo", "Pântano"],
+    ["m07", "Árvore dos Ecos", "Memória Viva dos Ancestrais", "Gameleira Sagrada", "Árvore"],
+    ["m08", "Passagem das Raízes", "Conexão Subterrânea", "Morcego", "Passagem"],
+    ["m09", "Santuário Selvagem", "Refúgio Inexpugnável", "Caboclo Flecheiro", "Santuário"]
   ],
   "calunga-grande": [
-    ["g01", "Praia das Marés", "Ciclos & Renovação", "Iemanjá", "Praia"],
-    ["g02", "Porto das Almas", "Chegada & Partida", "Barqueiro", "Porto"],
-    ["g03", "Baía do Crepúsculo", "Transição", "Oxumaré", "Baía"],
+    ["g01", "Praia da Fuga da Caravela", "Ciclos & Libertação", "Iemanjá", "Praia"],
+    ["g02", "Porto das Almas", "Chegada e Partida", "Barqueiro", "Porto"],
+    ["g03", "Baía do Crepúsculo", "Transição das Águas", "Oxumaré", "Baía"],
     ["g04", "Ilha das Brumas", "Isolamento Sagrado", "Mestra da Névoa", "Ilha"],
-    ["g05", "Cais da Lua", "Intuição", "Lua Cheia", "Cais"],
-    ["g06", "Farol Esquecido", "Orientação", "Guardião do Farol", "Farol"],
-    ["g07", "Gruta das Ondas", "Som Primordial", "Sirena Ancestral", "Gruta"],
-    ["g08", "Enseada do Silêncio", "Paz Profunda", "Mar Calmo", "Enseada"],
-    ["g09", "Costa dos Navegantes", "Jornada", "Navegador Antigo", "Costa"]
+    ["g05", "Cais da Lua", "Intuição & Marés", "Lua Cheia", "Cais"],
+    ["g06", "Farol Esquecido", "Orientação das Jangadas", "Guardião do Farol", "Farol"],
+    ["g07", "Gruta das Ondas", "Som Primordial do Mar", "Sirena Ancestral", "Gruta"],
+    ["g08", "Enseada do Silêncio", "Paz do Guerreiro", "Mar Calmo", "Enseada"],
+    ["g09", "Costa dos Navegantes", "Jornada além-mar", "Navegador Antigo", "Costa"]
   ],
   "calunga-pequena": [
-    ["p01", "Cemitério das Brumas", "Comunicação Ancestral", "Omulu", "Cemitério"],
-    ["p02", "Portal das Lápides", "Acesso ao Além", "Exu Cemitério", "Portal"],
-    ["p03", "Jardim Silencioso", "Paz Eterna", "Mãe do Jardim", "Jardim"],
-    ["p04", "Capela Antiga", "Fé & Respeito", "Padre das Almas", "Capela"],
-    ["p05", "Campo dos Ciprestes", "Proteção dos Mortos", "Cipreste Velho", "Campo"],
-    ["p06", "Cripta das Sombras", "Segredos Guardados", "Guardião da Cripta", "Cripta"],
-    ["p07", "Mausoléu da Lua", "Memória Iluminada", "Lua Prateada", "Mausoléu"],
-    ["p08", "Alameda das Memórias", "Lembrança Viva", "Ancestral Silencioso", "Alameda"],
-    ["p09", "Portão de Pedra", "Limiar Definitivo", "Guardião do Portão", "Portão"]
+    ["p01", "Cemitério das Brumas", "Comunicação com Ancestrais", "Omulu", "Cemitério"],
+    ["p02", "Portal das Lápides", "Acesso ao Além & Revelação", "Exu Cemitério", "Portal"],
+    ["p03", "Jardim Silencioso", "Paz Eterna dos Livres", "Mãe do Jardim", "Jardim"],
+    ["p04", "Capela Antiga", "Fé & Resistência", "Padre das Almas", "Capela"],
+    ["p05", "Campo dos Ciprestes", "Proteção contra Capitães", "Cipreste Velho", "Campo"],
+    ["p06", "Cripta das Sombras", "Segredos dos Miasmas", "Guardião da Cripta", "Cripta"],
+    ["p07", "Mausoléu da Lua", "Memória dos Mártires", "Lua Prateada", "Mausoléu"],
+    ["p08", "Alameda das Memórias", "Lembrança Viva da África", "Ancestral Silencioso", "Alameda"],
+    ["p09", "Portão de Pedra", "Limiar Definitivo", "Tata Caveira", "Portão"]
   ],
   lira: [
-    ["l01", "Cidade da Lira", "Harmonia Total", "Rei da Lira", "Cidade"],
-    ["l02", "Praça Escarlate", "Paixão Criativa", "Rainha Escarlate", "Praça"],
-    ["l03", "Beco dos Tambores", "Ritmo do Coração", "Mestre Tambor", "Beco"],
-    ["l04", "Salão das Máscaras", "Transformação", "Mestre das Máscaras", "Salão"],
-    ["l05", "Rua dos Artistas", "Expressão Livre", "Artista Errante", "Rua"],
-    ["l06", "Jardim das Lanternas", "Luz na Festa", "Mestra das Lanternas", "Jardim"],
-    ["l07", "Mercado da Meia-Noite", "Troca Mística", "Feitor da Noite", "Mercado"],
-    ["l08", "Pátio dos Espelhos", "Auto-conhecimento", "Espelho Mágico", "Pátio"],
-    ["l09", "Palácio das Ilusões", "Realidade Fluida", "Ilusionista Supremo", "Palácio"]
+    ["l01", "Cidade da Lira", "Harmonia dos Tambores", "Rei da Lira", "Cidade"],
+    ["l02", "Praça Escarlate", "Paixão Criativa & Berimbau", "Rainha Escarlate", "Praça"],
+    ["l03", "Beco dos Tambores", "Ritmo de Guerra & Ginga", "Mestre Tambor", "Beco"],
+    ["l04", "Salão das Máscaras", "Disfarce Urbano", "Mestre das Máscaras", "Salão"],
+    ["l05", "Rua dos Artistas", "Expressão & Rodas", "Artista Errante", "Rua"],
+    ["l06", "Jardim das Lanternas", "Luz na Escuridão", "Mestra das Lanternas", "Jardim"],
+    ["l07", "Mercado da Meia-Noite", "Troca Mística de Pólvora", "Feitor da Noite", "Mercado"],
+    ["l08", "Pátio dos Espelhos", "Auto-conhecimento do Guerreiro", "Espelho Mágico", "Pátio"],
+    ["l09", "Palácio das Ilusões", "Distração dos Captores", "Ilusionista Supremo", "Palácio"]
   ],
   almas: [
-    ["a01", "Portal das Almas", "Transição de Almas", "Barqueiro das Almas", "Portal"],
-    ["a02", "Cidade do Crepúsculo", "Existência Limiar", "Prefeito do Crepúsculo", "Cidade"],
-    ["a03", "Ponte dos Ecos", "Mensagens do Além", "Eco Eterno", "Ponte"],
-    ["a04", "Torre do Silêncio", "Visão Panorâmica", "Vigia Silencioso", "Torre"],
-    ["a05", "Jardim Etéreo", "Beleza Imortal", "Jardineiro das Almas", "Jardim"],
-    ["a06", "Vila das Brumas", "Comunidade Espiritual", "Anciã da Bruma", "Vila"],
-    ["a07", "Templo do Limiar", "Rito de Passagem", "Sacerdote do Véu", "Templo"],
-    ["a08", "Castelo do Véu", "Domínio do Mistério", "Senhor do Véu", "Castelo"],
-    ["a09", "Trono das Sombras", "Autoridade Espiritual", "Rainha das Sombras", "Trono"]
+    ["a01", "Portal das Almas", "Transição de Coragem", "Barqueiro das Almas", "Portal"],
+    ["a02", "Cidade do Crepúsculo", "Existência no Limiar", "Prefeito do Crepúsculo", "Cidade"],
+    ["a03", "Ponte dos Ecos", "Vozes dos Pretos Velhos", "Eco Eterno", "Ponte"],
+    ["a04", "Torre do Silêncio", "Vigília dos Engenhos", "Vigia Silencioso", "Torre"],
+    ["a05", "Jardim Etéreo", "Ervas da Imortalidade", "Jardineiro das Almas", "Jardim"],
+    ["a06", "Vila das Brumas", "Irmandade Ancestral", "Anciã da Bruma", "Vila"],
+    ["a07", "Templo do Limiar", "Rito de Passagem ao Combate", "Sacerdote do Véu", "Templo"],
+    ["a08", "Castelo do Véu", "Mistério da Vitória", "Senhor do Véu", "Castelo"],
+    ["a09", "Trono das Sombras", "Autoridade do Quilombo", "Rainha das Sombras", "Trono"]
   ]
 };
 
@@ -131,7 +132,8 @@ function fromAtlas(id: string, index: number, x: number, y: number, kind: Entity
     y,
     realm: id,
     countsAsPoint: kind === 'point' || kind === 'portal',
-    visited: false
+    visited: false,
+    secretClue: `Guardião ${row[3]} sopra: "Confie na Ginga da Capoeira e colha Alecrim para blindar seu corpo contra miasmas."`
   };
 }
 
@@ -147,19 +149,31 @@ export function createEncruzilhadas(): Realm {
   const spots = [[9, 9], [15, 9], [21, 9], [9, 15], [15, 15], [21, 15], [9, 21], [15, 21], [21, 21]];
   const entities: Entity[] = spots.map((p, i) => fromAtlas('encruzilhadas', i, p[0], p[1], i === 7 ? 'portal' : 'point'));
   entities.push({ kind: 'fire', id: 'fire-e', name: 'Braseiro da esquina', x: 15, y: 17.2 });
-  entities.push({ kind: 'person', id: 'pe1', name: 'Andarilho', x: 9, y: 16.5, line: 'Aqui toda rua encontra outra. Não existe beco sem cruz.' });
-  entities.push({ kind: 'person', id: 'pe2', name: 'Lanterninha', x: 21, y: 12.5, line: 'A viela acende quando o Cruzeiro do centro abre.' });
+  entities.push({ kind: 'person', id: 'pe1', name: 'Andarilho Tranca-Rua', x: 9, y: 16.5, line: 'Aqui toda rua encontra outra. Lance pedras para despistar os capitães armados.' });
+  entities.push({ kind: 'person', id: 'pe2', name: 'Lanterninha Gira Mundo', x: 21, y: 12.5, line: 'A viela acende quando o Cruzeiro do centro abre.' });
+  // Enemy Capitão do Mato
+  entities.push({
+    kind: 'enemy',
+    id: 'cap-e1',
+    name: 'Capitão do Mato',
+    x: 12,
+    y: 9,
+    hp: 40,
+    maxHp: 40,
+    enemyType: 'capitao',
+    speed: 1.2
+  });
 
   return {
     id: 'encruzilhadas',
     name: 'Reino das Encruzilhadas',
-    blurb: 'Cidade de ruas retas que se cruzam sempre. Guardiões de encruzilhada e caminhos abertos.',
+    blurb: 'Cidade de ruas retas patrulhada por milícias. Tranca-Rua guarda as passagens.',
     map: m,
     entities,
     spawn: { x: 15, y: 18.5, angle: -Math.PI / 2 },
     returnSpawn: { x: 15, y: 17.4, angle: -Math.PI / 2 },
     theme: { sky0: '#2c2418', sky1: '#8a7048', floor0: '#6a5844', floor1: '#2a2118' },
-    enterLine: 'Encruzilhadas. As ruas se cruzam em ângulo reto. O Cruzeiro está no centro.'
+    enterLine: 'Encruzilhadas. Tranca-Rua vigia. Use pedras para distrair patrulhas e abra caminho.'
   };
 }
 
@@ -181,19 +195,54 @@ export function createMatas(): Realm {
   const spots = [[4, 4], [16, 15], [26, 15], [13, 16], [5, 15], [26, 5], [15, 5], [5, 26], [26, 26]];
   const entities: Entity[] = spots.map((p, i) => fromAtlas('matas', i, p[0], p[1], i === 1 ? 'portal' : 'point'));
   entities.push({ kind: 'fire', id: 'fire-m', name: 'Fogueira da aldeia', x: 16.8, y: 17.2 });
-  entities.push({ kind: 'person', id: 'pm1', name: 'Mateiro', x: 14.2, y: 16.8, line: 'A aldeia é o claro. O resto é mata fechada.' });
-  entities.push({ kind: 'person', id: 'pm2', name: 'Menina das folhas', x: 18.5, y: 16.2, line: 'Não saia da trilha. A floresta devolve quem se perde.' });
+  entities.push({ kind: 'person', id: 'pm1', name: 'Mateiro Quebra Galho', x: 14.2, y: 16.8, line: 'A mata tem arruda, guiné e alecrim. Cace javalis e coelhos para alimentar o Quilombo.' });
+  entities.push({ kind: 'person', id: 'pm2', name: 'Menina Nia', x: 18.5, y: 16.2, line: 'Não saia da trilha desarmado. Prepare lanças e flechas!' });
+
+  // Wildlife Fauna: Rabbit and Boar
+  entities.push({
+    kind: 'animal',
+    id: 'ani-m1',
+    name: 'Coelho Selvagem',
+    x: 18,
+    y: 13,
+    hp: 15,
+    maxHp: 15,
+    animalType: 'coelho',
+    speed: 1.6
+  });
+  entities.push({
+    kind: 'animal',
+    id: 'ani-m2',
+    name: 'Javali da Mata',
+    x: 6,
+    y: 6,
+    hp: 35,
+    maxHp: 35,
+    animalType: 'javali',
+    speed: 1.1
+  });
+  entities.push({
+    kind: 'animal',
+    id: 'ani-m3',
+    name: 'Pato Silvestre',
+    x: 24,
+    y: 18,
+    hp: 15,
+    maxHp: 15,
+    animalType: 'pato',
+    speed: 1.4
+  });
 
   return {
     id: 'matas',
     name: 'Reino das Matas',
-    blurb: 'Aldeia no claro, floresta densa e espíritos da Jurema em volta.',
+    blurb: 'Aldeia no claro, floresta densa e fauna silvestre sob a bênção de Quebra Galho e Pantera Negra.',
     map: m,
     entities,
     spawn: { x: 16, y: 18.2, angle: -Math.PI / 2 },
     returnSpawn: { x: 16, y: 17.2, angle: -Math.PI / 2 },
     theme: { sky0: '#143226', sky1: '#3d8a52', floor0: '#3e5a28', floor1: '#182010' },
-    enterLine: 'Matas. Uma aldeia no centro e floresta por todos os lados.'
+    enterLine: 'Matas. O ar cheira a alecrim e terra molhada. Cace animais e colha ervas para sobreviver.'
   };
 }
 
@@ -213,19 +262,43 @@ export function createPorto(): Realm {
   const spots = [[20.5, 11.5], [14.5, 14.5], [20.5, 22.5], [26.5, 7], [27.5, 16], [6.5, 6.5], [5.5, 23.5], [20.5, 27.5], [10.5, 16.5]];
   const entities: Entity[] = spots.map((p, i) => fromAtlas('calunga-grande', i, p[0], p[1], i === 1 ? 'portal' : 'point'));
   entities.push({ kind: 'fire', id: 'fire-g', name: 'Braseiro do cais', x: 19.2, y: 16 });
-  entities.push({ kind: 'person', id: 'pg1', name: 'Estivador', x: 17.2, y: 16.2, line: 'O mar é o lado direito. O cais entra na água.' });
-  entities.push({ kind: 'person', id: 'pg2', name: 'Pescadora', x: 24.5, y: 16.8, line: 'Daqui se vê pedra, cais e o cruzeiro da praia.' });
+  entities.push({ kind: 'person', id: 'pg1', name: 'Mestre Obá', x: 17.2, y: 16.2, line: 'Foi aqui que a caravela aportou. A Capoeira salvou nossa pele quando saltamos ao mar!' });
+  entities.push({ kind: 'person', id: 'pg2', name: 'Pescadora Iemanjá', x: 24.5, y: 16.8, line: 'Os peixes nas águas rasas podem ser pescados com a lança.' });
+  // Fish wildlife in water edge
+  entities.push({
+    kind: 'animal',
+    id: 'ani-g1',
+    name: 'Cardume de Peixes',
+    x: 22.5,
+    y: 16.5,
+    hp: 10,
+    maxHp: 10,
+    animalType: 'peixe',
+    speed: 0.8
+  });
+  // Colonial militia guard
+  entities.push({
+    kind: 'enemy',
+    id: 'mil-g1',
+    name: 'Miliciano Colonial',
+    x: 10,
+    y: 18,
+    hp: 35,
+    maxHp: 35,
+    enemyType: 'miliciano',
+    speed: 1.0
+  });
 
   return {
     id: 'calunga-grande',
     name: 'Reino da Calunga Grande',
-    blurb: 'Cidade portuária e sagrada. Um lado é praia, cais, ondas de Iemanjá e pedra.',
+    blurb: 'Litoral e porto onde aportou a caravela negreira. O mar de Iemanjá e os rochedos da fuga.',
     map: m,
     entities,
     spawn: { x: 16.5, y: 16, angle: 0 },
     returnSpawn: { x: 16.2, y: 14.5, angle: Math.PI / 2 },
     theme: { sky0: '#16344a', sky1: '#7eb4d4', floor0: '#c2a06a', floor1: '#6a4e30' },
-    enterLine: 'Calunga Grande. Cidade do porto. À direita, praia, cais e pedras.'
+    enterLine: 'Calunga Grande. A praia da fuga! As ondas ainda ecoam os gritos do desembarque.'
   };
 }
 
@@ -244,18 +317,42 @@ export function createCemiterio(): Realm {
   const spots = [[5, 6], [15, 6], [25, 6], [7, 12], [15.5, 16.8], [25, 12], [7, 24], [15, 24], [16, 28.2]];
   const entities: Entity[] = spots.map((p, i) => fromAtlas('calunga-pequena', i, p[0], p[1], i === 8 ? 'portal' : 'point'));
   entities.push({ kind: 'fire', id: 'fire-p', name: 'Vela do portão', x: 14.2, y: 28.2 });
-  entities.push({ kind: 'person', id: 'pp1', name: 'Coveiro', x: 15, y: 21, line: 'Não é vila. É um cemitério grande, fileira após fileira sob a guarda de Omulu.' });
+  entities.push({ kind: 'person', id: 'pp1', name: 'Omulu dos Ossos', x: 15, y: 21, line: 'Cuidado com os Kiumbas. Mantenha a tocha acesa ou os miasmas devoram seu Axé!' });
+
+  // Kiumba dark astral entities
+  entities.push({
+    kind: 'enemy',
+    id: 'kiumba-1',
+    name: 'Kiumba das Lápides',
+    x: 8,
+    y: 10,
+    hp: 30,
+    maxHp: 30,
+    enemyType: 'kiumba',
+    speed: 0.9
+  });
+  entities.push({
+    kind: 'enemy',
+    id: 'kiumba-2',
+    name: 'Miasma Errante',
+    x: 20,
+    y: 20,
+    hp: 30,
+    maxHp: 30,
+    enemyType: 'kiumba',
+    speed: 0.8
+  });
 
   return {
     id: 'calunga-pequena',
     name: 'Reino da Calunga Pequena',
-    blurb: 'O grande cemitério, limiar sagrado e memórias ancestrais guardadas por Omulu.',
+    blurb: 'Cemitério ancestral protegido por Omulu e Tata Caveira. Mantenha a tocha viva contra Kiumbas.',
     map: m,
     entities,
     spawn: { x: 15, y: 26.5, angle: -Math.PI / 2 },
     returnSpawn: { x: 15, y: 26.5, angle: -Math.PI / 2 },
     theme: { sky0: '#16141a', sky1: '#6a6258', floor0: '#4a4036', floor1: '#1a1612' },
-    enterLine: 'Calunga Pequena. O reino inteiro é um cemitério sagrado.'
+    enterLine: 'Calunga Pequena. Névoa fria e sussurros ancestrais. A tocha dissipa os miasmas.'
   };
 }
 
@@ -272,23 +369,23 @@ export function createLira(): Realm {
   const entities: Entity[] = spots.map((p, i) => fromAtlas('lira', i, p[0], p[1], i === 1 ? 'portal' : 'point'));
   entities.push({ kind: 'fire', id: 'fire-l', name: 'Fogueira da praça', x: 13.4, y: 15.5 });
   const people: [string, number, number, string][] = [
-    ['Feirante', 13.2, 13.4, 'A feira ocupa as ruas. O canto vem de graça.'],
-    ['Mascarada', 18.2, 14.2, 'Compro, troco e danço. A Lira é comércio, festa e gente.'],
-    ['Tocador', 15.2, 18.2, 'Se ouvir o tambor, você ainda está na cidade certa.'],
-    ['Comerciante', 17.4, 17.2, 'Cada banca é um ponto. A praça é o Cruzeiro.']
+    ['Feirante Meia Noite', 13.2, 13.4, 'Na Lira os captores bebem e se distraem. A hora do ataque virá com os 49 libertos!'],
+    ['Mascarada Dandara', 18.2, 14.2, 'Compro ferro para flechas e troco ervas. A Capoeira faz a festa e a guerra.'],
+    ['Tocador de Berimbau', 15.2, 18.2, 'Ouça o toque de São Bento Grande: é sinal de rasteira certeira.'],
+    ['Comerciante Treme Terra', 17.4, 17.2, 'Cada banca guarda suprimentos para os quilombolas.']
   ];
   people.forEach((p, i) => entities.push({ kind: 'person', id: 'pl' + i, name: p[0], x: p[1], y: p[2], line: p[3] }));
 
   return {
     id: 'lira',
     name: 'Reino da Lira',
-    blurb: 'Cidade de comércio, feiras, tambores e mistério sob a noite.',
+    blurb: 'Cidade de feiras, música e berimbaus. Lugar onde se compram flechas e se planeja a revolta.',
     map: m,
     entities,
     spawn: { x: 16, y: 17.8, angle: -Math.PI / 2 },
     returnSpawn: { x: 16, y: 17.6, angle: -Math.PI / 2 },
     theme: { sky0: '#3a1830', sky1: '#c46a98', floor0: '#8a5844', floor1: '#321c18' },
-    enterLine: 'Lira. Feiras, bancas e gente nas ruas. O Cruzeiro é a praça central.'
+    enterLine: 'Lira. O toque do berimbau reverbera nas vielas. Meia Noite e Dandara abrem a roda.'
   };
 }
 
@@ -308,18 +405,18 @@ export function createAlmas(): Realm {
   const spots = [[8, 8], [23, 8], [12, 15.5], [8, 3.5], [19, 15.5], [23, 26], [16, 15.5], [8, 26], [26, 15.5]];
   const entities: Entity[] = spots.map((p, i) => fromAtlas('almas', i, p[0], p[1], i === 6 ? 'portal' : 'point'));
   entities.push({ kind: 'fire', id: 'fire-a', name: 'Braseiro do templo', x: 14.2, y: 16.2 });
-  entities.push({ kind: 'person', id: 'pa1', name: 'Sacristão', x: 18.4, y: 16.2, line: 'As montanhas fecham o reino. As igrejas ficam nos vales espirituais.' });
+  entities.push({ kind: 'person', id: 'pa1', name: 'Vovó Maria Conga', x: 18.4, y: 16.2, line: 'Filho meu, banha teu peito com guiné e arruda. Os Pretos Velhos cobrem teus passos.' });
 
   return {
     id: 'almas',
     name: 'Reino das Almas',
-    blurb: 'Montanhas, vales sagrados e igrejas dos Pretos Velhos onde o véu se desfaz.',
+    blurb: 'Vales montanhosos e templos dos Pretos Velhos. Onde a oração e a sabedoria fortalecem a alma.',
     map: m,
     entities,
     spawn: { x: 16, y: 17.4, angle: -Math.PI / 2 },
     returnSpawn: { x: 16, y: 17.5, angle: -Math.PI / 2 },
     theme: { sky0: '#1a2830', sky1: '#8eb4bc', floor0: '#6a7270', floor1: '#242c2c' },
-    enterLine: 'Almas. Vales entre montanhas e igrejas onde o caminho se abre.'
+    enterLine: 'Almas. O fumo de cachimbo de Vovó Maria Conga abençoa os guerreiros da liberdade.'
   };
 }
 
@@ -338,21 +435,21 @@ export function createQuilombo(): Realm {
 
   return {
     id: 'quilombo',
-    name: 'Quilombo',
-    blurb: 'Zona segura e sagrada. Neste chão fortificado não há perigo nem inimigos.',
+    name: 'Quilombo Central',
+    blurb: 'Santuário de refúgio e quartel-general da libertação. Onde os 49 foragidos se reúnem e treinam Capoeira.',
     safe: true,
     map: m,
     entities: [
       { kind: 'portal', id: 'quilombo-cruzeiro', name: 'Cruzeiro do Quilombo', x: 15.5, y: 19.5, countsAsPoint: false },
-      { kind: 'fire', id: 'fire-q', name: 'Fogueira Sagrada', x: 15.5, y: 14.5 },
-      { kind: 'person', id: 'pq1', name: 'Guardiã do portão', x: 15.5, y: 17.4, line: 'Pode entrar. Caçador nenhum cruza esta paliçada sagrada.' },
-      { kind: 'person', id: 'pq2', name: 'Anciã', x: 17.6, y: 14.6, line: 'Aqui a fogueira não se apaga. Este chão é livre e seguro.' },
-      { kind: 'person', id: 'pq3', name: 'Criança', x: 13.4, y: 15.6, line: 'Lá fora tem mata e cidade. Aqui dentro, somos família e força.' }
+      { kind: 'fire', id: 'fire-q', name: 'Grande Fogueira Sagrada', x: 15.5, y: 14.5 },
+      { kind: 'person', id: 'pq1', name: 'Mestre da Capoeira', x: 15.5, y: 17.4, line: 'Vem para a roda! A Ginga ilude o feitor e a Meia-Lua derruba a espada do capitão.' },
+      { kind: 'person', id: 'pq2', name: 'Anciã Iyalorixá Naná', x: 17.6, y: 14.6, line: 'Aqui a fogueira não se apaga. Todos os 49 resgatados encontram comida, banho de ervas e armas.' },
+      { kind: 'person', id: 'pq3', name: 'Dandara Guerreira', x: 13.4, y: 15.6, line: 'Quando os 49 irmãos estiverem reunidos, partiremos juntos para quebrar as correntes dos engenhos!' }
     ],
     spawn: { x: 15.5, y: 16.4, angle: -Math.PI / 2 },
     returnSpawn: { x: 15.5, y: 17.8, angle: -Math.PI / 2 },
     theme: { sky0: '#243018', sky1: '#d7b15a', floor0: '#8a6234', floor1: '#2c1c10' },
-    enterLine: 'Quilombo. Zona segura e refúgio dos ancestrais. Aqui você descansa.'
+    enterLine: 'Quilombo Central. Chão sagrado e fortificado! Treine Capoeira, descanse e organize a revolta.'
   };
 }
 
@@ -385,7 +482,7 @@ export function createEspaco(): Realm {
     ['calunga-pequena', 'Reino da Calunga Pequena', 15.5, 27.2, '#d8c6a0'],
     ['lira', 'Reino da Lira', 7.2, 25.2, '#d58bb1'],
     ['almas', 'Reino das Almas', 25.2, 6.2, '#79c5cb'],
-    ['quilombo', 'Quilombo', 26.2, 26.2, '#e7b85a']
+    ['quilombo', 'Quilombo Central', 26.2, 26.2, '#e7b85a']
   ];
   gates.forEach((g) => entities.push({ kind: 'gate', id: 'gate-' + g[0], to: g[0], name: g[1], x: g[2], y: g[3], color: g[4] }));
   entities.push({ kind: 'fire', id: 'fire-c', name: 'Chama do entre-reinos', x: 17.2, y: 16.4 });
@@ -407,7 +504,7 @@ export function createEspaco(): Realm {
       quilombo: { x: 24.2, y: 24.2, angle: Math.atan2(26.2 - 24.2, 26.2 - 24.2) }
     },
     theme: { sky0: '#07060f', sky1: '#1a1430', floor0: '#3a3458', floor1: '#100e18', space: true },
-    enterLine: 'Espaço dos Cruzeiros. Não há cidade aqui: só portais estelares para os outros reinos.'
+    enterLine: 'Espaço dos Cruzeiros. Portais celestes conectam os 7 reinos ao Quilombo Central.'
   };
 }
 
@@ -425,14 +522,14 @@ export function createInitialWorld(): Record<string, Realm> {
 }
 
 export const MARK_ICONS: Record<string, { symbol: string; color: string; desc: string }> = {
-  encruzilhadas: { symbol: '✖', color: '#e4a65f', desc: 'Caminhos & Portais' },
-  cruzeiros: { symbol: '🕯', color: '#b9b4d4', desc: 'Espaço-Portal & Silêncio' },
-  matas: { symbol: '🌿', color: '#a8c47c', desc: 'Florestas & Clareiras' },
-  'calunga-grande': { symbol: '🌊', color: '#9bb4d2', desc: 'Marés & Profundezas' },
-  'calunga-pequena': { symbol: '💀', color: '#d8c6a0', desc: 'Limiar & Memória' },
-  lira: { symbol: '🎭', color: '#d58bb1', desc: 'Celebração & Mistério' },
-  almas: { symbol: '🪦', color: '#79c5cb', desc: 'Espiritual & Véu' },
-  quilombo: { symbol: '🔥', color: '#e7b85a', desc: 'Refúgio Seguro dos Livres' }
+  encruzilhadas: { symbol: '✖', color: '#e4a65f', desc: 'Tranca-Rua & Portais' },
+  cruzeiros: { symbol: '🕯', color: '#b9b4d4', desc: 'Espaço Astral & Portais' },
+  matas: { symbol: '🌿', color: '#a8c47c', desc: 'Quebra Galho & Caça' },
+  'calunga-grande': { symbol: '🌊', color: '#9bb4d2', desc: 'Iemanjá & Caravela' },
+  'calunga-pequena': { symbol: '💀', color: '#d8c6a0', desc: 'Omulu & Miasmas' },
+  lira: { symbol: '🎭', color: '#d58bb1', desc: 'Meia Noite & Berimbaus' },
+  almas: { symbol: '🪦', color: '#79c5cb', desc: 'Pretos Velhos & Véu' },
+  quilombo: { symbol: '🔥', color: '#e7b85a', desc: 'Quilombo dos 49 Livres' }
 };
 
 export const MUNDI_NODES = [
@@ -456,9 +553,11 @@ export const INITIAL_SHRINES: Altar[] = [
     activated: false,
     offerings: 0,
     maxOfferings: 3,
-    offeringName: 'Tabaco Sagrado & Argila',
-    power: 'Conexão profunda com Mestre Kunde',
-    buff: '+35 de Axé Máximo permanente'
+    offeringName: 'Tabaco Sagrado & Argila Branca',
+    power: 'Conexão profunda com Tata Caveira',
+    buff: '+35 de Axé Máximo permanente',
+    guardianName: 'Tata Caveira',
+    guardianMessage: '“Para libertar os teus irmãos na Calunga, segue o rastro dos ciprestes onde a noite é mais funda. A chave do feitor quebra com a rasteira da Capoeira.”'
   },
   {
     id: 'altar_gameleira',
@@ -469,9 +568,11 @@ export const INITIAL_SHRINES: Altar[] = [
     activated: false,
     offerings: 0,
     maxOfferings: 3,
-    offeringName: 'Ervas de Jurema & Cabaça',
-    power: 'Sabedoria das raízes ancestrais',
-    buff: '+25 de Vida (HP) Máxima permanente'
+    offeringName: 'Ervas de Arruda, Guiné & Cabaça',
+    power: 'Sabedoria de Quebra Galho',
+    buff: '+25 de Vida (HP) Máxima permanente',
+    guardianName: 'Quebra Galho',
+    guardianMessage: '“Nas Matas, o Capitão do Mato teme o canto do corvo. Lance pedras no bambuzal para atrair a sentinela para longe do cativeiro dos 7 irmãos.”'
   },
   {
     id: 'altar_oxum',
@@ -482,9 +583,11 @@ export const INITIAL_SHRINES: Altar[] = [
     activated: false,
     offerings: 0,
     maxOfferings: 3,
-    offeringName: 'Banho de Macassá & Água Doce',
-    power: 'Ciclos, renovação e purificação',
-    buff: '+20% de resistência à Sede'
+    offeringName: 'Banho de Macassá & Alecrim',
+    power: 'Ciclos e purificação de miasmas',
+    buff: '+20% de resistência à Sede e Miasmas',
+    guardianName: 'Iemanjá das Marés',
+    guardianMessage: '“No Porto da Calunga Grande, a maré baixa revela as passagens onde os captores prendem os foragidos. Limpe os miasmas com chá de alecrim.”'
   },
   {
     id: 'altar_caçador',
@@ -495,73 +598,75 @@ export const INITIAL_SHRINES: Altar[] = [
     activated: false,
     offerings: 0,
     maxOfferings: 3,
-    offeringName: 'Frutos Silvestres & Mel',
-    power: 'Agilidade dos ventos e pontaria',
-    buff: '+20% de velocidade de corrida'
+    offeringName: 'Carne Seca de Caça & Mel Silvestre',
+    power: 'Agilidade de Pantera Negra',
+    buff: '+25% de velocidade de corrida e dano de lança',
+    guardianName: 'Pantera Negra',
+    guardianMessage: '“Na Lira, os captores vigiam as esquinas armados. A agilidade da Capoeira Ancestral e a pontaria do arco quebram qualquer sentinela.”'
   }
 ];
 
 export const INITIAL_REFUGEES: Refugee[] = [
-  // Encruzilhadas (0)
-  { id: 'ref_encruza_1', name: 'Dandara', title: 'Guerreira das Sete Vias', kingdomIndex: 0, rescued: false },
-  { id: 'ref_encruza_2', name: 'Tião Batedor', title: 'Mensageiro dos Quatro Cantos', kingdomIndex: 0, rescued: false },
-  { id: 'ref_encruza_3', name: 'Alaba', title: 'Guardiã dos Portais de Fuga', kingdomIndex: 0, rescued: false },
-  { id: 'ref_encruza_4', name: 'Bako', title: 'Rastreador Noturno', kingdomIndex: 0, rescued: false },
-  { id: 'ref_encruza_5', name: 'Zola', title: 'Tecelã das Trilhas Ocultas', kingdomIndex: 0, rescued: false },
-  { id: 'ref_encruza_6', name: 'Mandla', title: 'Corredor dos Ventos', kingdomIndex: 0, rescued: false },
-  { id: 'ref_encruza_7', name: 'Kioni', title: 'Protetor do Cruzeiro das Estradas', kingdomIndex: 0, rescued: false },
+  // Encruzilhadas (0) - 7 escravizados a libertar
+  { id: 'ref_encruza_1', name: 'Dandara dos Ventos', title: 'Guerreira da Capoeira e Líder de Palmares', kingdomIndex: 0, rescued: false, locationHint: 'Próxima ao Marco das Três Trilhas' },
+  { id: 'ref_encruza_2', name: 'Tião Batedor', title: 'Mensageiro dos Quatro Cantos', kingdomIndex: 0, rescued: false, locationHint: 'Na Viela das Lanternas' },
+  { id: 'ref_encruza_3', name: 'Alaba da Noite', title: 'Guardiã dos Portais de Fuga', kingdomIndex: 0, rescued: false, locationHint: 'No Portal das Estradas' },
+  { id: 'ref_encruza_4', name: 'Bako Rastreador', title: 'Vigia Noturno de Emboscadas', kingdomIndex: 0, rescued: false, locationHint: 'Perto do Mercado das Sombras' },
+  { id: 'ref_encruza_5', name: 'Zola Tecelã', title: 'Guardiã das Trilhas Ocultas', kingdomIndex: 0, rescued: false, locationHint: 'Na Ponte dos Destinos' },
+  { id: 'ref_encruza_6', name: 'Mandla Flecha', title: 'Corredor das Sete Vias', kingdomIndex: 0, rescued: false, locationHint: 'Na Encruzilhada Central' },
+  { id: 'ref_encruza_7', name: 'Kioni Protetor', title: 'Sentinela do Cruzeiro das Estradas', kingdomIndex: 0, rescued: false, locationHint: 'Na Estrada do Cruzeiro' },
 
-  // Cruzeiros (1)
-  { id: 'ref_cruzeiro_1', name: 'Tio Tião', title: 'Griô do Cruzeiro das Almas', kingdomIndex: 1, rescued: false },
-  { id: 'ref_cruzeiro_2', name: 'Iyalorixá Naná', title: 'Mãe das Ervas e dos Cruzeiros', kingdomIndex: 1, rescued: false },
-  { id: 'ref_cruzeiro_3', name: 'Lumumba', title: 'Carregador de Pedras Sagradas', kingdomIndex: 1, rescued: false },
-  { id: 'ref_cruzeiro_4', name: 'Ayana', title: 'Cantora dos Hinos Ancestrais', kingdomIndex: 1, rescued: false },
-  { id: 'ref_cruzeiro_5', name: 'Simão', title: 'Mateiro do Cruzeiro do Sul', kingdomIndex: 1, rescued: false },
-  { id: 'ref_cruzeiro_6', name: 'Zuri', title: 'Pescador dos Rios Místicos', kingdomIndex: 1, rescued: false },
-  { id: 'ref_cruzeiro_7', name: 'Kalu', title: 'Acólito das Lanternas', kingdomIndex: 1, rescued: false },
+  // Cruzeiros (1) - 7 escravizados a libertar
+  { id: 'ref_cruzeiro_1', name: 'Tio Tião Griô', title: 'Contador de Histórias e Guardião da Memória', kingdomIndex: 1, rescued: false, locationHint: 'Junto à Chama do Entre-Reinos' },
+  { id: 'ref_cruzeiro_2', name: 'Iyalorixá Naná', title: 'Mãe das Ervas Medicinais', kingdomIndex: 1, rescued: false, locationHint: 'No Largo das Lanternas' },
+  { id: 'ref_cruzeiro_3', name: 'Lumumba Ferreiro', title: 'Forjador de Lanças e Facões', kingdomIndex: 1, rescued: false, locationHint: 'No Portal de Pedra' },
+  { id: 'ref_cruzeiro_4', name: 'Ayana Cantora', title: 'Mestra dos Cantos de Coragem', kingdomIndex: 1, rescued: false, locationHint: 'Na Colina do Cruzeiro' },
+  { id: 'ref_cruzeiro_5', name: 'Simão Mateiro', title: 'Mateiro do Cruzeiro do Sul', kingdomIndex: 1, rescued: false, locationHint: 'Na Passagem das Sombras' },
+  { id: 'ref_cruzeiro_6', name: 'Zuri Pescador', title: 'Navegador dos Rios Silenciosos', kingdomIndex: 1, rescued: false, locationHint: 'Na Praça do Caminhante' },
+  { id: 'ref_cruzeiro_7', name: 'Kalu Guardião', title: 'Acólito da Tocha Sagrada', kingdomIndex: 1, rescued: false, locationHint: 'No Campo das Sete Cruzes' },
 
-  // Matas (2)
-  { id: 'ref_matas_1', name: 'Nia', title: 'Menina dos Pássaros e das Folhas', kingdomIndex: 2, rescued: false },
-  { id: 'ref_matas_2', name: 'Curador Juremeiro', title: 'Mestre das Raízes da Jurema', kingdomIndex: 2, rescued: false },
-  { id: 'ref_matas_3', name: 'Makena', title: 'Rastreadora Invisível', kingdomIndex: 2, rescued: false },
-  { id: 'ref_matas_4', name: 'Jabari', title: 'Caçador de Mutum', kingdomIndex: 2, rescued: false },
-  { id: 'ref_matas_5', name: 'Aissatou', title: 'Coletora de Resinas Sagradas', kingdomIndex: 2, rescued: false },
-  { id: 'ref_matas_6', name: 'Kwame', title: 'Flecheiro dos Jequitibás', kingdomIndex: 2, rescued: false },
-  { id: 'ref_matas_7', name: 'Tendai', title: 'Guardião dos Bambuzais', kingdomIndex: 2, rescued: false },
+  // Matas (2) - 7 escravizados a libertar
+  { id: 'ref_matas_1', name: 'Nia das Folhas', title: 'Menina dos Pássaros e Ervas Silvestres', kingdomIndex: 2, rescued: false, locationHint: 'Na Clareira da Lua' },
+  { id: 'ref_matas_2', name: 'Curador Juremeiro', title: 'Mestre das Raízes Sagradas da Jurema', kingdomIndex: 2, rescued: false, locationHint: 'Na Árvore dos Ecos' },
+  { id: 'ref_matas_3', name: 'Makena da Mata', title: 'Rastreadora Invisível nas Folhagens', kingdomIndex: 2, rescued: false, locationHint: 'Na Vila dos Cipós' },
+  { id: 'ref_matas_4', name: 'Jabari Caçador', title: 'Atirador de Arco e Flecha', kingdomIndex: 2, rescued: false, locationHint: 'No Bosque das Brumas' },
+  { id: 'ref_matas_5', name: 'Aissatou Coletora', title: 'Extratora de Resinas e Cabaças', kingdomIndex: 2, rescued: false, locationHint: 'No Pântano Esquecido' },
+  { id: 'ref_matas_6', name: 'Kwame Flecheiro', title: 'Guerreiro das Copas de Jequitibá', kingdomIndex: 2, rescued: false, locationHint: 'Na Mata das Árvores Antigas' },
+  { id: 'ref_matas_7', name: 'Tendai Sentinela', title: 'Guardião dos Bambuzais Sagrados', kingdomIndex: 2, rescued: false, locationHint: 'Na Passagem das Raízes' },
 
-  // Calunga Grande (3)
-  { id: 'ref_mar_1', name: 'Mestre Obá', title: 'Ferreiro dos Corais e da Forja', kingdomIndex: 3, rescued: false },
-  { id: 'ref_mar_2', name: 'Yawa', title: 'Mergulhadora das Marés Revoltas', kingdomIndex: 3, rescued: false },
-  { id: 'ref_mar_3', name: 'Kofi', title: 'Remador das Ondas Bravas', kingdomIndex: 3, rescued: false },
-  { id: 'ref_mar_4', name: 'Malaika', title: 'Sentinela das Falésias', kingdomIndex: 3, rescued: false },
-  { id: 'ref_mar_5', name: 'Badu', title: 'Menino das Conchas', kingdomIndex: 3, rescued: false },
-  { id: 'ref_mar_6', name: 'Amina', title: 'Astrônoma do Cruzeiro do Mar', kingdomIndex: 3, rescued: false },
-  { id: 'ref_mar_7', name: 'Tau', title: 'Guardião dos Rochedos do Sul', kingdomIndex: 3, rescued: false },
+  // Calunga Grande (3) - 7 escravizados a libertar
+  { id: 'ref_mar_1', name: 'Mestre Obá Forjador', title: 'Ferreiro Naval e Guerreiro de Capoeira', kingdomIndex: 3, rescued: false, locationHint: 'No Cais da Lua' },
+  { id: 'ref_mar_2', name: 'Yawa Nadadora', title: 'Mergulhadora das Marés e Falésias', kingdomIndex: 3, rescued: false, locationHint: 'Na Praia da Fuga' },
+  { id: 'ref_mar_3', name: 'Kofi Remador', title: 'Remador de Canoas de Fuga', kingdomIndex: 3, rescued: false, locationHint: 'No Porto das Almas' },
+  { id: 'ref_mar_4', name: 'Malaika Vigia', title: 'Sentinela das Altas Falésias', kingdomIndex: 3, rescued: false, locationHint: 'No Farol Esquecido' },
+  { id: 'ref_mar_5', name: 'Badu das Conchas', title: 'Mergulhador de Pérolas e Arpão', kingdomIndex: 3, rescued: false, locationHint: 'Na Gruta das Ondas' },
+  { id: 'ref_mar_6', name: 'Amina Astrônoma', title: 'Leitora das Estrelas do Mar', kingdomIndex: 3, rescued: false, locationHint: 'Na Costa dos Navegantes' },
+  { id: 'ref_mar_7', name: 'Tau das Rochas', title: 'Guardião dos Rochedos do Litoral', kingdomIndex: 3, rescued: false, locationHint: 'Na Enseada do Silêncio' },
 
-  // Calunga Pequena (4)
-  { id: 'ref_morte_1', name: 'Babá Alagbá', title: 'Sacerdote dos Ancestrais Sepultados', kingdomIndex: 4, rescued: false },
-  { id: 'ref_morte_2', name: 'Nzinga', title: 'Guardiã das Relíquias e Ossos Santos', kingdomIndex: 4, rescued: false },
-  { id: 'ref_morte_3', name: 'Enitan', title: 'Partideira da Travessia Negra', kingdomIndex: 4, rescued: false },
-  { id: 'ref_morte_4', name: 'Femi', title: 'Escultor dos Marcos Funerários', kingdomIndex: 4, rescued: false },
-  { id: 'ref_morte_5', name: 'Thabo', title: 'Zelador das Memórias Esquecidas', kingdomIndex: 4, rescued: false },
-  { id: 'ref_morte_6', name: 'Niazi', title: 'Filósofo dos Silêncios', kingdomIndex: 4, rescued: false },
-  { id: 'ref_morte_7', name: 'Siku', title: 'Protetor dos Túmulos Anônimos', kingdomIndex: 4, rescued: false },
+  // Calunga Pequena (4) - 7 escravizados a libertar
+  { id: 'ref_morte_1', name: 'Babá Alagbá', title: 'Sacerdote dos Ancestrais e da Memória', kingdomIndex: 4, rescued: false, locationHint: 'No Portal das Lápides' },
+  { id: 'ref_morte_2', name: 'Nzinga Guardiã', title: 'Protetora das Relíquias e Ossos Sagrados', kingdomIndex: 4, rescued: false, locationHint: 'Na Capela Antiga' },
+  { id: 'ref_morte_3', name: 'Enitan da Travessia', title: 'Curandeira da Febre e dos Miasmas', kingdomIndex: 4, rescued: false, locationHint: 'No Jardim Silencioso' },
+  { id: 'ref_morte_4', name: 'Femi Escultor', title: 'Talhador de Marcos de Liberdade', kingdomIndex: 4, rescued: false, locationHint: 'No Campo dos Ciprestes' },
+  { id: 'ref_morte_5', name: 'Thabo Zelador', title: 'Protetor dos Segredos da Cripta', kingdomIndex: 4, rescued: false, locationHint: 'Na Cripta das Sombras' },
+  { id: 'ref_morte_6', name: 'Niazi Pensador', title: 'Sábio do Silêncio da Noite', kingdomIndex: 4, rescued: false, locationHint: 'No Mausoléu da Lua' },
+  { id: 'ref_morte_7', name: 'Siku da Guarda', title: 'Guardião do Limiar de Omulu', kingdomIndex: 4, rescued: false, locationHint: 'No Portão de Pedra' },
 
-  // Lira (5)
-  { id: 'ref_lira_1', name: 'Mestre Alabê', title: 'Tocador do Tambor de Iemanjá', kingdomIndex: 5, rescued: false },
-  { id: 'ref_lira_2', name: 'Dandara da Lira', title: 'Mestra das Rodas de Capoeira e Dança', kingdomIndex: 5, rescued: false },
-  { id: 'ref_lira_3', name: 'Jabulani', title: 'Mestre do Berimbau de Barriga', kingdomIndex: 5, rescued: false },
-  { id: 'ref_lira_4', name: 'Chidi', title: 'Contador de Fábulas e Histórias', kingdomIndex: 5, rescued: false },
-  { id: 'ref_lira_5', name: 'Halima', title: 'Soprano dos Cantos de Oxum', kingdomIndex: 5, rescued: false },
-  { id: 'ref_lira_6', name: 'Sekou', title: 'Flautista dos Bambus da Mata', kingdomIndex: 5, rescued: false },
-  { id: 'ref_lira_7', name: 'Faraji', title: 'Mestre da Alegria e dos Jogos de Força', kingdomIndex: 5, rescued: false },
+  // Lira (5) - 7 escravizados a libertar
+  { id: 'ref_lira_1', name: 'Mestre Alabê', title: 'Tocador do Atabaque Rúnico', kingdomIndex: 5, rescued: false, locationHint: 'No Beco dos Tambores' },
+  { id: 'ref_lira_2', name: 'Dandara da Lira', title: 'Mestra de Rodas e Rasteiras Rápidas', kingdomIndex: 5, rescued: false, locationHint: 'Na Praça Escarlate' },
+  { id: 'ref_lira_3', name: 'Jabulani do Berimbau', title: 'Mestre do Berimbau de Gunga', kingdomIndex: 5, rescued: false, locationHint: 'No Salão das Máscaras' },
+  { id: 'ref_lira_4', name: 'Chidi Contador', title: 'Contador de Provérbios dos Orixás', kingdomIndex: 5, rescued: false, locationHint: 'Na Rua dos Artistas' },
+  { id: 'ref_lira_5', name: 'Halima Soprano', title: 'Cantora dos Hinos de Oxum', kingdomIndex: 5, rescued: false, locationHint: 'No Jardim das Lanternas' },
+  { id: 'ref_lira_6', name: 'Sekou Flautista', title: 'Músico de Bambu e Sopro Mágico', kingdomIndex: 5, rescued: false, locationHint: 'No Mercado da Meia-Noite' },
+  { id: 'ref_lira_7', name: 'Faraji Mestre de Força', title: 'Campeão de Luta e Resistência', kingdomIndex: 5, rescued: false, locationHint: 'No Palácio das Ilusões' },
 
-  // Almas (6)
-  { id: 'ref_almas_1', name: 'Vovó Maria Conga', title: 'Rezadeira Centenária dos Pretos Velhos', kingdomIndex: 6, rescued: false },
-  { id: 'ref_almas_2', name: 'Pai Joaquim d\'Angola', title: 'Sábio da Palha e do Cachimbo Protetor', kingdomIndex: 6, rescued: false },
-  { id: 'ref_almas_3', name: 'Tio Benguela', title: 'Guardião da Travessia dos Ecos', kingdomIndex: 6, rescued: false },
-  { id: 'ref_almas_4', name: 'Menina Candinha', title: 'Médium das Visões Premonitórias', kingdomIndex: 6, rescued: false },
-  { id: 'ref_almas_5', name: 'Zandile', title: 'Carpinteira dos Altares da Mata', kingdomIndex: 6, rescued: false },
-  { id: 'ref_almas_6', name: 'Odion', title: 'Astrônomo e Filho do Sol Poente', kingdomIndex: 6, rescued: false },
-  { id: 'ref_almas_7', name: 'Mestre Kunde Menor', title: 'Discípulo da Pedra das Almas', kingdomIndex: 6, rescued: false }
+  // Almas (6) - 7 escravizados a libertar
+  { id: 'ref_almas_1', name: 'Vovó Maria Conga', title: 'Rezadeira Centenária dos Pretos Velhos', kingdomIndex: 6, rescued: false, locationHint: 'No Templo do Limiar' },
+  { id: 'ref_almas_2', name: 'Pai Joaquim d\'Angola', title: 'Sábio do Cachimbo Protetor e da Palha', kingdomIndex: 6, rescued: false, locationHint: 'No Castelo do Véu' },
+  { id: 'ref_almas_3', name: 'Tio Benguela', title: 'Guardião da Travessia dos Ecos', kingdomIndex: 6, rescued: false, locationHint: 'Na Ponte dos Ecos' },
+  { id: 'ref_almas_4', name: 'Menina Candinha', title: 'Médium de Visões Premonitórias', kingdomIndex: 6, rescued: false, locationHint: 'No Jardim Etéreo' },
+  { id: 'ref_almas_5', name: 'Zandile Carpinteira', title: 'Construtora de Paliçadas e Fortes', kingdomIndex: 6, rescued: false, locationHint: 'Na Vila das Brumas' },
+  { id: 'ref_almas_6', name: 'Odion Astrônomo', title: 'Filho do Sol Poente e Vigia', kingdomIndex: 6, rescued: false, locationHint: 'Na Torre do Silêncio' },
+  { id: 'ref_almas_7', name: 'Mestre Kunde Menor', title: 'Discípulo da Pedra das Almas', kingdomIndex: 6, rescued: false, locationHint: 'No Trono das Sombras' }
 ];

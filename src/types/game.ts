@@ -1,4 +1,20 @@
-export type EntityKind = 'point' | 'portal' | 'gate' | 'fire' | 'person';
+export type EntityKind =
+  | 'point'
+  | 'portal'
+  | 'gate'
+  | 'fire'
+  | 'person'
+  | 'animal'
+  | 'enemy'
+  | 'guardian';
+
+export type WeaponType = 'capoeira' | 'pedra' | 'lanca' | 'arco';
+
+export type AnimalType = 'coelho' | 'javali' | 'pato' | 'peixe';
+
+export type EnemyType = 'kiumba' | 'capitao' | 'miliciano';
+
+export type CampaignPhase = 'fase1_fuga' | 'fase2_libertacao' | 'fase3_revolta' | 'vitoria';
 
 export interface Entity {
   id: string;
@@ -6,6 +22,8 @@ export interface Entity {
   name: string;
   x: number;
   y: number;
+  hp?: number;
+  maxHp?: number;
   visited?: boolean;
   countsAsPoint?: boolean;
   power?: string;
@@ -15,6 +33,11 @@ export interface Entity {
   to?: string;
   color?: string;
   type?: string;
+  animalType?: AnimalType;
+  enemyType?: EnemyType;
+  isDead?: boolean;
+  speed?: number;
+  secretClue?: string;
 }
 
 export interface RealmTheme {
@@ -51,6 +74,24 @@ export interface PlayerState {
   angle: number;
 }
 
+export interface Inventory {
+  meat: number;
+  water: number;
+  arruda: number;
+  guine: number;
+  alecrim: number;
+  arrows: number;
+  spears: number;
+  stones: number; // infinity available
+}
+
+export interface CapoeiraSkills {
+  ginga: boolean;
+  rasteira: boolean;
+  meiaLua: boolean;
+  level: number;
+}
+
 export interface SurvivalState {
   hp: number;
   hunger: number;
@@ -58,6 +99,13 @@ export interface SurvivalState {
   axe: number;
   torch: boolean;
   radar: boolean;
+  miasmas: number; // 0 to 100% miasma contamination from dark entities
+  activeWeapon: WeaponType;
+  inventory: Inventory;
+  capoeira: CapoeiraSkills;
+  phase: CampaignPhase;
+  quilomboFounded: boolean;
+  revoltProgress: number; // 0 to 100% in Phase 3
 }
 
 export interface Altar {
@@ -72,6 +120,8 @@ export interface Altar {
   power: string;
   buff: string;
   offeringName: string;
+  guardianName: string;
+  guardianMessage: string;
 }
 
 export interface Refugee {
@@ -80,6 +130,19 @@ export interface Refugee {
   title: string;
   kingdomIndex: number;
   rescued: boolean;
+  locationHint?: string;
 }
 
-export type ViewMode = 'game' | 'localMap' | 'atlas' | 'reinos' | 'pontos' | 'altares' | 'refugees';
+export type ViewMode =
+  | 'game'
+  | 'localMap'
+  | 'atlas'
+  | 'reinos'
+  | 'pontos'
+  | 'altares'
+  | 'refugees'
+  | 'herbs'
+  | 'capoeira'
+  | 'prologue'
+  | 'revolta'
+  | 'pause';
