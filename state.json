@@ -1,0 +1,217 @@
+{
+  "project_id": "estrada-dos-mestres-01",
+  "name": "Estrada dos Mestres",
+  "philosophy": "Stateless AI, Stateful Storage — MCP Puzzle Orchestrator",
+  "version": "2.5D-Raycaster-v1.0",
+  "perspectives": [
+    "first_person_doom",
+    "aerial_2d_gba"
+  ],
+  "status": "IN_PROGRESS",
+  "current_piece_index": 0,
+  "max_retries": 3,
+  "context_budget": 3000,
+  "pieces": [
+    {
+      "id": "e01_renderer",
+      "status": "COMPLETED",
+      "output": "src/engine/Renderer3D.js",
+      "skills": [
+        "create_component"
+      ]
+    },
+    {
+      "id": "e02_raycaster",
+      "status": "COMPLETED",
+      "output": "src/engine/Raycaster2D.js",
+      "skills": [
+        "api_endpoint_design",
+        "rust_service_creation"
+      ]
+    },
+    {
+      "id": "e03_camera",
+      "status": "COMPLETED",
+      "output": "src/engine/Camera.js",
+      "skills": [
+        "create_component"
+      ]
+    },
+    {
+      "id": "e04_survival",
+      "status": "RUNNING",
+      "output": "src/systems/SurvivalEngine.js",
+      "skills": [
+        "plan_feature",
+        "auth_implementation"
+      ]
+    },
+    {
+      "id": "e05_spirit",
+      "status": "RUNNING",
+      "output": "src/systems/SpiritEnergy.js",
+      "skills": [
+        "dtos_schemas",
+        "security_scan"
+      ]
+    },
+    {
+      "id": "e06_refugees",
+      "status": "PENDING",
+      "output": "src/systems/RefugeesRescue.js",
+      "skills": [
+        "test_generation",
+        "integration_tests"
+      ]
+    },
+    {
+      "id": "e07_shrines",
+      "status": "PENDING",
+      "output": "src/systems/MasterShrines.js",
+      "skills": [
+        "test_debugging",
+        "security_scan"
+      ]
+    },
+    {
+      "id": "e08_hud",
+      "status": "RUNNING",
+      "output": "src/ui/HudOverlay.js",
+      "skills": [
+        "style_component",
+        "seo_optimization"
+      ]
+    },
+    {
+      "id": "e09_state",
+      "status": "COMPLETED",
+      "output": "state.json",
+      "skills": [
+        "memory_set",
+        "memory_get"
+      ]
+    },
+    {
+      "id": "e10_index",
+      "status": "RUNNING",
+      "output": "index.html",
+      "skills": [
+        "homepage_construct",
+        "cross_browser_test"
+      ]
+    },
+    {
+      "id": "e11_atlas_reinos",
+      "status": "COMPLETED",
+      "output": "atlas_completo.html",
+      "skills_used": [
+        "create_component",
+        "style_component",
+        "cross_browser_test",
+        "test_generation",
+        "api_testing",
+        "architecture_plan",
+        "integration_tests"
+      ],
+      "mcp_tools_used": [
+        "laya_route",
+        "headroom_compress",
+        "architecture_plan",
+        "memory_set",
+        "memory_get"
+      ],
+      "kingdoms": 7,
+      "points_per_kingdom": 9,
+      "total_points": 63,
+      "cosmology_integrated": true,
+      "perspective_switch": true,
+      "mcp_integration": "FULL"
+    }
+  ],
+  "systems": {
+    "raycaster": {
+      "algorithm": "DDA",
+      "fish_eye_corrected": true,
+      "fog": true,
+      "texture_procedural": true
+    },
+    "survival": {
+      "hunger": true,
+      "thirst": true,
+      "resources": true,
+      "collectable": "herbs_water_branches"
+    },
+    "spirit": {
+      "axe_bar": true,
+      "spirit_states": [
+        "Iluminado",
+        "Imbuido dos Mestres"
+      ],
+      "amulet_glow": true
+    },
+    "refugees": {
+      "count": 4,
+      "names": [
+        "Dandara",
+        "Tio Tião",
+        "Nia",
+        "Mestre Obá"
+      ],
+      "rescue_mechanic": "approach_and_diagnose"
+    },
+    "shrines": {
+      "points": 4,
+      "names": [
+        "Pedra das Almas",
+        "Gameleira Sagrada",
+        "Cachoeira de Oxum",
+        "Clareira do Mestre Caçador"
+      ],
+      "offerings": [
+        "tabaco",
+        "ervas",
+        "banho",
+        "frutos"
+      ]
+    },
+    "hud": {
+      "torch_right": true,
+      "amulet_left": true,
+      "map_key": "M",
+      "automap": true
+    },
+    "cycle": {
+      "day_night_3d": true,
+      "torch_critical_at_night": true
+    },
+    "perspective_switch": {
+      "key": "M",
+      "first_person": true,
+      "aerial_2d": true,
+      "state_shared": true
+    }
+  },
+  "cosmology": {
+    "south": "Praia & Restinga (fuga da caravela)",
+    "center": "Quilombo (Grande Fogueira Sagrada)",
+    "nw": "Pedra das Almas — Mestre Kunde (Tabaco, Argila, Pedras)",
+    "ne": "Gameleira Sagrada — Caboclo da Jurema (Ervas, Cabaça)",
+    "sw": "Cachoeira de Oxum — Mestra das Águas Doces (Banho, Macassá)",
+    "se": "Clareira do Mestre Caçador — Caboclo Flecheiro (Frutos)"
+  },
+  "mcp_integration": {
+    "adapter": "mcp_adapter.py",
+    "custom_server": "custom_mcp.py",
+    "self_healing": "self_healing.py",
+    "state_file": "state.json",
+    "memory_file": "mcp_memory_state.json"
+  },
+  "control_map": {
+    "W_S": "walk_forward_back",
+    "A_D": "strafe",
+    "ARROWS_MOUSE": "rotate_camera",
+    "SHIFT": "run",
+    "E_SPACE": "interact",
+    "M": "toggle_automap"
+  }
+}
